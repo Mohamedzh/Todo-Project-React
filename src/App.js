@@ -63,6 +63,7 @@ function App() {
 
 	return (
 		<div className='App'>
+			<h1> ToDos App</h1>
 			<TaskInput updateTasks={updateTasks} />
 			<Filters updateFilter={updateFilter} uncheckAll={uncheckAll} />
 			<TasksList checkDone={checkDone} removeTask={removeTask} tasks={tasks} displayTasks={displayTasks} />

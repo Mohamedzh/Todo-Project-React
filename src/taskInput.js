@@ -1,14 +1,25 @@
 import { useState } from 'react';
-const TaskInput = ({updateTasks}) => {
+import { FormControl, Button, InputGroup } from 'react-bootstrap'
+const TaskInput = ({ updateTasks }) => {
 	const [input, setInput] = useState('');
 	return (
-		<div>
-			<input type='text' onChange={e => setInput(e.target.value)} value={input} />
-			<button onClick={() => {
-        updateTasks(input);
-        setInput('')
-      }}>Add</button>
-		</div>
+		<div className="inputform">
+			<InputGroup className="mb-3">
+				<InputGroup.Text id="basic-addon1">Your Task</InputGroup.Text>
+				<FormControl
+					placeholder="Task"
+					aria-label="Username"
+					aria-describedby="basic-addon1"
+				/>
+			</InputGroup>
+			<Button className="mb-3 " variant="success" type="submit" onClick={() => {
+				updateTasks(input);
+				setInput('')
+			}}>
+				Submit
+			</Button>
+
+		</div >
 	);
 };
 
