@@ -1,56 +1,8 @@
-body{
-  background-image: linear-gradient(to top, #cfd9df 0%, #f0eae2 100%);
-    background-attachment: fixed;
-
-}
-
-.App {
-  text-align: center;
-
-}
-
-
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-.line-through {
+.lineThrough {
   text-decoration: line-through;
   text-decoration-style: solid;
   text-decoration-color: rgb(133, 4, 4);
+  text-decoration-line: line-through;
   text-decoration-thickness: 3px;
 }
 
@@ -59,66 +11,35 @@ body{
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
- max-width: 800px;
+  max-width: 800px;
 }
 
-.textp {
+.textParagraph {
   font-weight: bold;
   text-align: center;
   font-size: 1.5rem;
   vertical-align: middle;
   height: 20px;
 }
+
 .ListGroup {
-flex:1;
-
-}
-.checkbt {
-  flex:0;
+  flex: 1;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-}
-
-.form button {
-  width : 200px;
-}
-
-
-input {
-  margin-bottom: 10px;
+.checkBtn {
+  flex: 0;
 }
 
 h1 {
   padding: 30px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(250, 144, 4);
+  font-family: Verdana, Tahoma, sans-serif;
+  color: rgb(29, 4, 250);
 }
 
-.filterbuttons {
-  display: flex;
-  justify-content: flex-end;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  /* margin-left: 49%; */
-  /* margin-right: auto; */
-}
-
-.listitem {
+.listItem {
   vertical-align: middle;
 }
 
-.inputform {
-  display:flex;
-  width: 750px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.clearbutton{
+.clearButton {
   margin: 10px;
-  margin-right: 100px;
 }
